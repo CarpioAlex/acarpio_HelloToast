@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="0dp"
+    tools:context="com.acarpio.acarpio_hellotoast.MainActivity">
+
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:backgroundTint="@color/app_blue"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:text="@string/toast_button"
+        android:textColor="@android:color/white"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_weight="2"
+        android:background="@color/app_yellow"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:padding="0dp"
+        android:text="0"
+        android:textColor="@color/app_blue"
+        android:textSize="@dimen/count_text_size"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/app_blue"
+        android:includeFontPadding="false"
+        android:padding="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/count_button"
+        android:textColor="@android:color/white"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>

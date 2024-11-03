@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private Button countButton;
+    private Button toastButton;
     private TextView showCount;
     private int count;
 
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         showCount = findViewById(R.id.show_count);
         countButton = findViewById(R.id.countButton);
-
+        toastButton = findViewById(R.id.toastButton);
 
         if (savedInstanceState != null) {
             count = savedInstanceState.getInt("COUNT_INDEX", 0);
@@ -42,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         countButton.setOnClickListener(v -> {
             addCount();
         });
+
+        toastButton.setOnClickListener(v -> {
+            Toast.makeText(this, "Hello Toast! Current count is: " + count, Toast.LENGTH_SHORT).show();
+        });
+
     }
 
     public void addCount() {
